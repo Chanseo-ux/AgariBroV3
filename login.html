@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in – Google Accounts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 360px;
+      text-align: center;
+    }
+    .google-logo {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 8px;
+      color: #202124;
+    }
+    p {
+      font-size: 14px;
+      color: #5f6368;
+      margin-bottom: 24px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1669c1;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #5f6368;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+         alt="Google" class="google-logo">
+    <h1>Welcome</h1>
+    <p>friend@example.com</p>
+    <input type="password" id="password" placeholder="Enter your password" required>
+    <button onclick="prank()">Next</button>
+    <div class="footer">
+      <a href="#">Forgot password?</a> • <a href="#">Learn more</a>
+    </div>
+  </div>
+
+  <script>
+    function prank() {
+      alert("😂 GOTCHA! This isn’t Google at all!");
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }
+  </script>
+</body>
+</html>
